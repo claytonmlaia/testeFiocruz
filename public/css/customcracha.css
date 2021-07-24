@@ -1,0 +1,1171 @@
+/* Cracha */
+
+.crachaContainer {
+    max-height: 864px;
+    max-width: 560px;
+    background-color: #98dfb6;
+    vertical-align: middle;
+    margin:0 auto;
+    position: relative;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.crachaContainer .crachaImg{
+    width: 100%;
+    position:absolute;
+    z-index:1;
+}
+.crachaContainer .crachaFoto{
+    width: 158px;
+    height: 200px;
+    max-width: 207px;
+    max-height: 256px;
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top:168px;
+    left:25px;
+    z-index:2;
+}
+.crachaContainer .crachaMatricula{
+    position:absolute;
+    top:146px;
+    left:200px;
+    z-index:3;
+
+}
+.crachaContainer .crachaMatriculaValue{
+    width: 150px;
+    position:absolute;
+    top:168px;
+    left:205px;
+    z-index:4;
+
+}
+.crachaContainer .crachaAdmissao{
+     position:absolute;
+     top:146px;
+     left:380px;
+     z-index:5;
+ }
+.crachaContainer .crachaAdmissaoValue{
+    width: 300px;
+    position:absolute;
+    top:168px;
+    left:380px;
+    z-index:6;
+}
+.crachaContainer .crachaNome{
+    width: 150px;
+    position:absolute;
+    top:230px;
+    left:200px;
+    z-index:7;
+}
+.crachaContainer .crachaNomeValue{
+    width: 300px;
+    position:absolute;
+    top:253px;
+    left:205px;
+    z-index:8;
+}
+.crachaContainer .crachaCpf{
+    width: 150px;
+    position: absolute;
+    top:320px;
+    left:200px;
+    z-index:9;
+}
+.crachaContainer .crachaCpfValue{
+    width: 300px;
+    position: absolute;
+    top:343px;
+    left:205px;
+    z-index:10;
+}
+.crachaContainer .crachaSituacao{
+    width: 150px;
+    position:absolute;
+    top:320px;
+    left:380px;
+    z-index:11;
+}
+.crachaContainer .crachaSituacaoValue{
+    width: 300px;
+    position:absolute;
+    top:343px;
+    left:380px;
+    z-index:12;
+}
+.crachaContainer .crachaRg{
+    width: 150px;
+    position:absolute;
+    top:410px;
+    left:25px;
+    z-index:13;
+}
+.crachaContainer .crachaRgValue{
+    width: 250px;
+    position:absolute;
+    top:432px;
+    left:25px;
+    z-index:14;
+}
+.crachaContainer .crachaPisPasep{
+    width:150px;
+    position:absolute;
+    top:410px;
+    left:300px;
+    z-index:15;
+}
+.crachaContainer .crachaPisPasepValue{
+    width: 300px;
+    position:absolute;
+    top:432px;
+    left:300px;
+    z-index:16;
+}
+
+.crachaContainer .crachaDataNascimento{
+    width: 300px;
+    position:absolute;
+    top:410px;
+    left:425px;
+    z-index:17;
+}
+.crachaContainer .crachaDataNascimentoValue{
+    width: 300px;
+    position:absolute;
+    top:432px;
+    left:430px;
+    z-index:18;
+}
+
+.crachaContainer .crachaFiliacao{
+    width: 300px;
+    position:absolute;
+    top:485px;
+    left:25px;
+    z-index:19;
+}
+.crachaContainer .crachaFiliacaoValue{
+    width:510px;
+    position:absolute;
+    top:510px;
+    left:30px;
+    z-index:20;
+}
+.crachaContainer .crachaCargo{
+    width: 300px;
+    position:absolute;
+    top:580px;
+    left:25px;
+    z-index:21;
+}
+.crachaContainer .crachaCargoValue{
+    width: 510px;
+    position:absolute;
+    top:605px;
+    left:25px;
+    z-index:22;
+}
+.crachaContainer .qrcode {
+    top:660px;
+    left:190px;
+    position:absolute;
+    z-index:23;
+}
+#ImageSelf{
+    width: 145px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.cachaBackground{
+    /*width:150px;*/
+}
+
+/* PARA TELAS DE CELULAR Moto G4 e Galaxy S5 */
+@media only screen and (min-width: 358px) and (max-width: 362px) {
+
+    .crachaContainer {
+        position: relative;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .crachaContainer .crachaImg img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .crachaImg .crachaFoto img {
+        max-width: 95px;
+        /*max-height: auto;*/
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: -63px;
+        left: -13px;
+        z-index: 2;
+    }
+
+    .crachaImg .crachaMatricula {
+        font-size: 12px;
+        position: absolute;
+        top: 15.5%;
+        left: 37%;
+        z-index: 3;
+
+    }
+
+    .crachaImg .crachaMatriculaValue {
+        position: absolute;
+        top: 19%;
+        left: 37%;
+        z-index: 4;
+
+    }
+
+    .crachaImg .crachaAdmissao {
+        font-size: 12px;
+        position: absolute;
+        top: 15.5%;
+        left: 70%;
+        z-index: 5;
+    }
+
+    .crachaImg .crachaAdmissaoValue {
+        position: absolute;
+        top: 19%;
+        left: 70%;
+        z-index: 6;
+    }
+
+    .crachaImg .crachaNome {
+        font-size: 12px;
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        z-index: 7;
+    }
+
+    .crachaImg .crachaNomeValue {
+        font-size: 12px;
+        position: absolute;
+        top: 28.5%;
+        left: 37%;
+        z-index: 8;
+    }
+
+    .crachaImg .crachaCpf {
+        font-size: 12px;
+        position: absolute;
+        top: 36%;
+        left: 37%;
+        z-index: 9;
+    }
+
+    .crachaImg .crachaCpfValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39%;
+        left: 37%;
+        z-index: 10;
+    }
+
+    .crachaImg .crachaSituacao {
+        font-size: 12px;
+        position: absolute;
+        top: 36%;
+        left: 70%;
+        z-index: 11;
+    }
+
+    .crachaImg .crachaSituacaoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39%;
+        left: 70%;
+        z-index: 12;
+    }
+
+    .crachaImg .crachaRg {
+        font-size: 12px;
+        position: absolute;
+        top: 46.5%;
+        left: 5%;
+        z-index: 13;
+    }
+
+    .crachaImg .crachaRgValue {
+        font-size: 12px;
+        position: absolute;
+        top: 49.5%;
+        left: 5%;
+        z-index: 14;
+    }
+
+    .crachaImg .crachaPisPasep {
+        font-size: 11px;
+        position: absolute;
+        top: 46.5%;
+        left: 52%;
+        z-index: 15;
+    }
+
+    .crachaImg .crachaPisPasepValue {
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        z-index: 16;
+    }
+
+    .crachaImg .crachaDataNascimento {
+        font-size: 11px;
+        position: absolute;
+        top: 46.5%;
+        left: 74%;
+        z-index: 17;
+    }
+
+    .crachaImg .crachaDataNascimentoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        z-index: 18;
+    }
+
+    .crachaImg .crachaFiliacao {
+        font-size: 12px;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        z-index: 19;
+    }
+
+    .crachaImg .crachaFiliacaoValue {
+        font-size: 11px;
+        width: 330px;
+        position: absolute;
+        top: 58.5%;
+        left: 5%;
+        z-index: 20;
+    }
+
+    .crachaImg .crachaCargo {
+        font-size: 12px;
+        position: absolute;
+        top: 66%;
+        left: 5%;
+        z-index: 21;
+    }
+
+    .crachaImg .crachaCargoValue {
+        max-width: 95%;
+        font-size: 10px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 22;
+    }
+
+    .crachaContainer .qrcode {
+        zoom: 60%;
+        top: 77%;
+        left: 35%;
+        position: absolute;
+        z-index: 23;
+    }
+
+    .cachaBackground {
+        *width: 100%;
+    }
+
+}
+
+/* PARA TELAS DE CELULAR Pixel 2 */
+@media only screen and (min-width: 409px) and (max-width: 412px) {
+
+    .crachaContainer {
+        position: relative;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .crachaContainer .crachaImg img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .crachaImg .crachaFoto img {
+        max-width: 105px;
+        /*max-height: auto;*/
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: -45px;
+        left: -8px;
+        z-index: 2;
+    }
+
+    .crachaImg .crachaMatricula {
+        font-size: 12px;
+        position: absolute;
+        top: 16%;
+        left: 37%;
+        z-index: 3;
+
+    }
+
+    .crachaImg .crachaMatriculaValue {
+        position: absolute;
+        top: 19%;
+        left: 37%;
+        z-index: 4;
+
+    }
+
+    .crachaImg .crachaAdmissao {
+        font-size: 12px;
+        position: absolute;
+        top: 16%;
+        left: 70%;
+        z-index: 5;
+    }
+
+    .crachaImg .crachaAdmissaoValue {
+        position: absolute;
+        top: 19%;
+        left: 70%;
+        z-index: 6;
+    }
+
+    .crachaImg .crachaNome {
+        font-size: 12px;
+        position: absolute;
+        top: 26%;
+        left: 37%;
+        z-index: 7;
+    }
+
+    .crachaImg .crachaNomeValue {
+        font-size: 12px;
+        position: absolute;
+        top: 29%;
+        left: 37%;
+        z-index: 8;
+    }
+
+    .crachaImg .crachaCpf {
+        font-size: 12px;
+        position: absolute;
+        top: 36.5%;
+        left: 37%;
+        z-index: 9;
+    }
+
+    .crachaImg .crachaCpfValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39.5%;
+        left: 37%;
+        z-index: 10;
+    }
+
+    .crachaImg .crachaSituacao {
+        font-size: 12px;
+        position: absolute;
+        top: 36.5%;
+        left: 70%;
+        z-index: 11;
+    }
+
+    .crachaImg .crachaSituacaoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39.5%;
+        left: 70%;
+        z-index: 12;
+    }
+
+    .crachaImg .crachaRg {
+        font-size: 12px;
+        position: absolute;
+        top: 47%;
+        left: 5%;
+        z-index: 13;
+    }
+
+    .crachaImg .crachaRgValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        z-index: 14;
+    }
+
+    .crachaImg .crachaPisPasep {
+        font-size: 11px;
+        position: absolute;
+        top: 47%;
+        left: 53%;
+        z-index: 15;
+    }
+
+    .crachaImg .crachaPisPasepValue {
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        z-index: 16;
+    }
+
+    .crachaImg .crachaDataNascimento {
+        font-size: 11px;
+        position: absolute;
+        top: 47%;
+        left: 75%;
+        z-index: 17;
+    }
+
+    .crachaImg .crachaDataNascimentoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        z-index: 18;
+    }
+
+    .crachaImg .crachaFiliacao {
+        font-size: 12px;
+        position: absolute;
+        top: 56%;
+        left: 5%;
+        z-index: 19;
+    }
+
+    .crachaImg .crachaFiliacaoValue {
+        font-size: 11px;
+        width: 330px;
+        position: absolute;
+        top: 59%;
+        left: 5%;
+        z-index: 20;
+    }
+
+    .crachaImg .crachaCargo {
+        font-size: 12px;
+        position: absolute;
+        top: 67%;
+        left: 5%;
+        z-index: 21;
+    }
+
+    .crachaImg .crachaCargoValue {
+        max-width: 370px;
+        font-size: 10px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 22;
+    }
+
+    .crachaContainer .qrcode {
+        zoom: 70%;
+        top: 77%;
+        left: 35%;
+        position: absolute;
+        z-index: 23;
+    }
+
+    .cachaBackground {
+        *width: 100%;
+    }
+
+}
+
+/* PARA TELAS DE CELULAR iphone 5/SE */
+@media only screen and (min-width: 315px) and (max-width: 322px) {
+
+    .crachaContainer {
+        position: relative;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .crachaContainer .crachaImg img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .crachaImg .crachaFoto img {
+        max-width: 85px;
+        /*max-height: auto;*/
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: -75px;
+        left: -13px;
+        z-index: 2;
+    }
+
+    .crachaImg .crachaMatricula {
+        font-size: 12px;
+        position: absolute;
+        top: 15.5%;
+        left: 37%;
+        z-index: 3;
+
+    }
+
+    .crachaImg .crachaMatriculaValue {
+        position: absolute;
+        top: 19%;
+        left: 37%;
+        z-index: 4;
+
+    }
+
+    .crachaImg .crachaAdmissao {
+        font-size: 12px;
+        position: absolute;
+        top: 15.5%;
+        left: 70%;
+        z-index: 5;
+    }
+
+    .crachaImg .crachaAdmissaoValue {
+        position: absolute;
+        top: 19%;
+        left: 70%;
+        z-index: 6;
+    }
+
+    .crachaImg .crachaNome {
+        font-size: 12px;
+        position: absolute;
+        top: 25%;
+        left: 37%;
+        z-index: 7;
+    }
+
+    .crachaImg .crachaNomeValue {
+        font-size: 12px;
+        position: absolute;
+        top: 28.5%;
+        left: 37%;
+        z-index: 8;
+    }
+
+    .crachaImg .crachaCpf {
+        font-size: 12px;
+        position: absolute;
+        top: 36%;
+        left: 37%;
+        z-index: 9;
+    }
+
+    .crachaImg .crachaCpfValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39%;
+        left: 37%;
+        z-index: 10;
+    }
+
+    .crachaImg .crachaSituacao {
+        font-size: 12px;
+        position: absolute;
+        top: 36%;
+        left: 70%;
+        z-index: 11;
+    }
+
+    .crachaImg .crachaSituacaoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39%;
+        left: 70%;
+        z-index: 12;
+    }
+
+    .crachaImg .crachaRg {
+        font-size: 12px;
+        position: absolute;
+        top: 46.5%;
+        left: 5%;
+        z-index: 13;
+    }
+
+    .crachaImg .crachaRgValue {
+        font-size: 12px;
+        position: absolute;
+        top: 49.5%;
+        left: 5%;
+        z-index: 14;
+    }
+
+    .crachaImg .crachaPisPasep {
+        font-size: 11px;
+        position: absolute;
+        top: 46.5%;
+        left: 52%;
+        z-index: 15;
+    }
+
+    .crachaImg .crachaPisPasepValue {
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        z-index: 16;
+    }
+
+    .crachaImg .crachaDataNascimento {
+        font-size: 11px;
+        position: absolute;
+        top: 46.5%;
+        left: 74%;
+        z-index: 17;
+    }
+
+    .crachaImg .crachaDataNascimentoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        z-index: 18;
+    }
+
+    .crachaImg .crachaFiliacao {
+        font-size: 12px;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        z-index: 19;
+    }
+
+    .crachaImg .crachaFiliacaoValue {
+        font-size: 11px;
+        width: 300px;
+        position: absolute;
+        top: 58.5%;
+        left: 5%;
+        z-index: 20;
+    }
+
+    .crachaImg .crachaCargo {
+        font-size: 12px;
+        position: absolute;
+        top: 66%;
+        left: 5%;
+        z-index: 21;
+    }
+
+    .crachaImg .crachaCargoValue {
+        max-width: 95%;
+        font-size: 10px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 22;
+    }
+
+    .crachaContainer .qrcode {
+        zoom: 60%;
+        top: 77%;
+        left: 35%;
+        position: absolute;
+        z-index: 23;
+    }
+
+    .cachaBackground {
+        *width: 100%;
+    }
+
+}
+
+
+/* PARA TELAS DE CELULAR iphone 6/7/8 */
+@media only screen and (min-width: 373px) and (max-width: 378px) {
+
+    .crachaContainer{
+        position: relative;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+    .crachaContainer .crachaImg img{
+        width: 100%;
+        position:relative;
+        z-index:1;
+    }
+    .crachaImg .crachaFoto img{
+        max-width: 98px;
+        /*max-height: auto;*/
+        margin: 0px;
+        padding: 0px;
+        position:absolute;
+        top:-57px;
+        left:-10px;
+        z-index:2;
+    }
+    .crachaImg .crachaMatricula{
+        position:absolute;
+        top:15.5%;
+        left:37%;
+        z-index:3;
+
+    }
+    .crachaImg .crachaMatriculaValue{
+        position:absolute;
+        top:19%;
+        left:37%;
+        z-index:4;
+
+    }
+    .crachaImg .crachaAdmissao{
+        position:absolute;
+        top:15.5%;
+        left:70%;
+        z-index:5;
+    }
+    .crachaImg .crachaAdmissaoValue{
+        position:absolute;
+        top:19%;
+        left:70%;
+        z-index:6;
+    }
+    .crachaImg .crachaNome{
+        position:absolute;
+        top:25%;
+        left:37%;
+        z-index:7;
+    }
+    .crachaImg .crachaNomeValue{
+        position:absolute;
+        top:28.5%;
+        left:37%;
+        z-index:8;
+    }
+    .crachaImg .crachaCpf{
+        position: absolute;
+        top:36%;
+        left:37%;
+        z-index:9;
+    }
+    .crachaImg .crachaCpfValue{
+        position: absolute;
+        top:39%;
+        left:37%;
+        z-index:10;
+    }
+    .crachaImg .crachaSituacao{
+        position:absolute;
+        top:36%;
+        left:70%;
+        z-index:11;
+    }
+    .crachaImg .crachaSituacaoValue{
+        position:absolute;
+        top:39%;
+        left:70%;
+        z-index:12;
+    }
+    .crachaImg .crachaRg{
+        position:absolute;
+        top:46.5%;
+        left:5%;
+        z-index:13;
+    }
+    .crachaImg .crachaRgValue{
+        position:absolute;
+        top:49.5%;
+        left:5%;
+        z-index:14;
+    }
+    .crachaImg .crachaPisPasep{
+        font-size: 13px;
+        position:absolute;
+        top:46.5%;
+        left:52%;
+        z-index:15;
+    }
+    .crachaImg .crachaPisPasepValue{
+        font-size: 11px;
+        position:absolute;
+        top:50%;
+        left:52%;
+        z-index:16;
+    }
+
+    .crachaImg .crachaDataNascimento{
+        font-size: 12px;
+        position:absolute;
+        top:46.5%;
+        left:74%;
+        z-index:17;
+    }
+    .crachaImg .crachaDataNascimentoValue{
+        font-size: 12px;
+        position:absolute;
+        top:50%;
+        left:77%;
+        z-index:18;
+    }
+
+    .crachaImg .crachaFiliacao{
+        position:absolute;
+        top:55%;
+        left:5%;
+        z-index:19;
+    }
+    .crachaImg .crachaFiliacaoValue{
+        font-size: 12px;
+        position:absolute;
+        top:59%;
+        left:5%;
+        z-index:20;
+    }
+    .crachaImg .crachaCargo{
+        position:absolute;
+        top:66%;
+        left:5%;
+        z-index:21;
+    }
+    .crachaImg .crachaCargoValue{
+        max-width: 95%;
+        font-size: 11px;
+        position:absolute;
+        top:70%;
+        left:5%;
+        z-index:22;
+    }
+    .crachaContainer .qrcode{
+        zoom: 65%;
+        top:77%;
+        left:35%;
+        position:absolute;
+        z-index:23;
+    }
+
+    .cachaBackground{
+        *width:100%;
+    }
+
+}
+
+/* PARA TELAS DE CELULAR Iphone 6/7/8 plus */
+@media only screen and (min-width: 413px) and (max-width: 416px) {
+
+    .crachaContainer {
+        position: relative;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .crachaContainer .crachaImg img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .crachaImg .crachaFoto img {
+        max-width: 105px;
+        /*max-height: auto;*/
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: -45px;
+        left: -8px;
+        z-index: 2;
+    }
+
+    .crachaImg .crachaMatricula {
+        font-size: 12px;
+        position: absolute;
+        top: 16%;
+        left: 37%;
+        z-index: 3;
+
+    }
+
+    .crachaImg .crachaMatriculaValue {
+        position: absolute;
+        top: 19%;
+        left: 37%;
+        z-index: 4;
+
+    }
+
+    .crachaImg .crachaAdmissao {
+        font-size: 12px;
+        position: absolute;
+        top: 16%;
+        left: 70%;
+        z-index: 5;
+    }
+
+    .crachaImg .crachaAdmissaoValue {
+        position: absolute;
+        top: 19%;
+        left: 70%;
+        z-index: 6;
+    }
+
+    .crachaImg .crachaNome {
+        font-size: 12px;
+        position: absolute;
+        top: 26%;
+        left: 37%;
+        z-index: 7;
+    }
+
+    .crachaImg .crachaNomeValue {
+        font-size: 12px;
+        position: absolute;
+        top: 29%;
+        left: 37%;
+        z-index: 8;
+    }
+
+    .crachaImg .crachaCpf {
+        font-size: 12px;
+        position: absolute;
+        top: 36.5%;
+        left: 37%;
+        z-index: 9;
+    }
+
+    .crachaImg .crachaCpfValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39.5%;
+        left: 37%;
+        z-index: 10;
+    }
+
+    .crachaImg .crachaSituacao {
+        font-size: 12px;
+        position: absolute;
+        top: 36.5%;
+        left: 70%;
+        z-index: 11;
+    }
+
+    .crachaImg .crachaSituacaoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 39.5%;
+        left: 70%;
+        z-index: 12;
+    }
+
+    .crachaImg .crachaRg {
+        font-size: 12px;
+        position: absolute;
+        top: 47%;
+        left: 5%;
+        z-index: 13;
+    }
+
+    .crachaImg .crachaRgValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        z-index: 14;
+    }
+
+    .crachaImg .crachaPisPasep {
+        font-size: 11px;
+        position: absolute;
+        top: 47%;
+        left: 53%;
+        z-index: 15;
+    }
+
+    .crachaImg .crachaPisPasepValue {
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        z-index: 16;
+    }
+
+    .crachaImg .crachaDataNascimento {
+        font-size: 11px;
+        position: absolute;
+        top: 47%;
+        left: 75%;
+        z-index: 17;
+    }
+
+    .crachaImg .crachaDataNascimentoValue {
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        z-index: 18;
+    }
+
+    .crachaImg .crachaFiliacao {
+        font-size: 12px;
+        position: absolute;
+        top: 56%;
+        left: 5%;
+        z-index: 19;
+    }
+
+    .crachaImg .crachaFiliacaoValue {
+        font-size: 11px;
+        width: 330px;
+        position: absolute;
+        top: 59%;
+        left: 5%;
+        z-index: 20;
+    }
+
+    .crachaImg .crachaCargo {
+        font-size: 12px;
+        position: absolute;
+        top: 67%;
+        left: 5%;
+        z-index: 21;
+    }
+
+    .crachaImg .crachaCargoValue {
+        max-width: 370px;
+        font-size: 10px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 22;
+    }
+
+    .crachaContainer .qrcode {
+        zoom: 70%;
+        top: 77%;
+        left: 35%;
+        position: absolute;
+        z-index: 23;
+    }
+
+    .cachaBackground {
+        *width: 100%;
+    }
+
+}
+
+
+

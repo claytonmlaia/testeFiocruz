@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: white !important;
+    padding: 10px;
+    margin: 0px;
+}
+
+.topoRelatorio {
+    vertical-align: middle;
+    margin:0 auto;
+    position:relative;
+    border-collapse: collapse;
+    width: 700px !important;
+    line-height: 14px;
+}
+
+.topoRelatorio td {
+    height:17px;
+    padding-left:1px;
+    padding-right:1px;
+    padding-bottom: 1px;
+    font-family:"Montserrat", sans-serif;
+    font-size:11px;
+}
+
+#relatorio{
+    vertical-align: middle;
+    margin:3px;
+    position:relative;
+}
+
+th{
+    white-space: nowrap;
+}
+
+.pearametroPesquisa{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.dataRodape{
+    float: right;
+    margin-right: 50px;
+}
+
+.subtitles{
+    background-color: #005cbf;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subtables{
+    background-color: #5f90ae;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -17px;
+}
+
+.txtParametroPesquisa{
+    padding: 2px;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+}
+
+.txtTipoServidor{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #FF0000;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.txtMini{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.txtMedi{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.tabelaApertada{
+    width: 100%;
+    /*border-collapse: collapse;*/
+}
+
+.tabelaApertada thead th{
+    background-color: #8DB4E2;
+    font-size: 12px;
+}
+
+.tabelaApertada thead td{
+    padding: 5px;
+}
+
+.tabelaApertada tbody{
+    font-size: 12px;
+}
+
+.tabelaApertada tbody td{
+    padding: 5px;
+}
+
+.tabelaApertada tbody .trPar{
+    background: #EEEEEE;
+}
+
+.tabelaApertada tbody .trFim{
+    background: #8DB4E2;
+}
+
+.tabelaApertada tbody .trFim td:last-child{
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.corpoRelatorio{
+    width: 100%;
+}
+
+.corpoRelatorio thead{
+    background-color: white;
+}
+
+.corpoRelatorio tbody .trPar{
+    background: #cfcfcf;
+}
+
+
+.tabBreak{
+    border-left-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+}
+
+.dataRodape{
+    float: right;
+    margin-right: 5px;
+    font-size: 8px;
+}
+
+/*FOLHA DE PONTO*/
+.relFolhaPonto{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.relFolhaPonto .tabelaZerada{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto{
+    vertical-align: middle;
+    margin:0 auto;
+    position:relative;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto thead .tituloFolhaPonto{
+    padding: 5px 0 5px 0; /* T R B L */
+    margin: 0;
+    background-color: #CCCCCC;
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody .subTituloFolhaPonto{
+    padding: 4px 0 4px 0; /* T R B L */
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody tr td{
+    padding: 3px;
+    margin: 0;
+    font-size: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto .txtObs{
+    font-size: 14px !important;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody tr .noBorder{
+    border: transparent 0;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody tr .borderLeft{
+    border-left: solid 1px #000000;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody tr .borderRight{
+    border-right: solid 1px #000000;
+}
+
+.relFolhaPonto .topoRelatorioFolhaPonto tbody tr .borderBottom{
+    border-bottom: solid 1px #000000;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto{
+    vertical-align: middle;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2px 0 0 0; /* T R B L */
+    padding: 0; /* T R B L */
+    position:relative;
+    font-size: 14px;
+    /*table-layout: auto;*/
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto thead th{
+    /*background-color: #CCCCCC;*/
+    font-size: 12px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto tbody tr td{
+    /*padding: 1px 0 1px 0; !* T R B L *!*/
+    font-size: 11px;
+    height: 19px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .dias{
+    font-size: 14px !important;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .colTip1{
+    width: 26px !important;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .colTip2{
+    width: 71px !important;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .colTip3{
+    width: 51px !important;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .colTip4{
+    width: 30px !important;
+}
+
+.relFolhaPonto .tabelaApertadaFolhaPonto .colFimSemana{
+    background-color: #CCCCCC;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto{
+    vertical-align: middle;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 17px 0 0 0; /* T R B L */
+    padding: 5px 0 0 0; /* T R B L */
+    position:relative;
+    table-layout: fixed;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto tbody tr .noBorder{
+    border: transparent 0;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto tbody tr .borderLeft{
+    border-left: solid 1px #000000;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto tbody tr .borderRight{
+    border-right: solid 1px #000000;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto tbody tr .borderBottom{
+    border-bottom: solid 1px #000000;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto tbody tr .borderTop{
+    border-top: solid 1px #000000;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto .colAssinatura{
+    vertical-align: top;
+    height: 63px;
+    width: 50%;
+    font-size: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.relFolhaPonto .adjustTop{
+    padding-top: 5px !important;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto .txtCodigosFolhaPonto{
+    font-size: .55rem;
+}
+
+.relFolhaPonto .tabelaAssinaturaFolhaPonto .txtFrequenciaFolhaPonto{
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+.relFolhaPonto .linhaSemDiaFolhaPonto{
+    height: 22px;
+    display: flex;
+}
+
+.relFolhaPonto .grpRodaPeFolhaPonto{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.relFolhaPonto .txtRodaPeFolhaPontoEsquerda{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    float: left;
+}
+
+.relFolhaPonto .txtRodaPeFolhaPontoDireita{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    float: right;
+}
+
+/*////////////////////////////////*/
+/*       CALENARIO ESCALA         */
+/*////////////////////////////////*/
+.relCalendarioEscala{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario{
+    vertical-align: middle;
+    margin:0 auto;
+    position:relative;
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody{
+    padding: 4px 0 4px 0; /* T R B L */
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody tr td{
+    padding: 3px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody tr .noBorder{
+    border: transparent 0;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody tr .borderLeft{
+    border-left: solid 1px #000000;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody tr .borderRight{
+    border-right: solid 1px #000000;
+}
+
+.relCalendarioEscala .topoRelatorioCalendario tbody tr .borderBottom{
+    border-bottom: solid 1px #000000;
+}
+
+
+.relCalendarioEscala .tabelaCalendario{
+    vertical-align: middle;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0 0 0; /* T R B L */
+    padding: 0; /* T R B L */
+    position:relative;
+    font-size: 14px;
+}
+.relCalendarioEscala .tabelaApertadaCalendario{
+    vertical-align: middle;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0 0 0; /* T R B L */
+    padding: 0px 0 0 0; /* T R B L */
+    position:relative;
+    table-layout: fixed;
+}
+
+.relCalendarioEscala .tabelaApertadaCalendario thead th{
+    /*background-color: #CCCCCC;*/
+    font-size: 12px;
+    padding: 5px;
+    font-weight: normal;
+
+}
+
+.relCalendarioEscala .tabelaApertadaCalendario tbody tr td{
+    height: 66px !important;
+    vertical-align: top;
+
+}
+
+.relCalendarioEscala .tabelaApertadaCalendario .colTip1{
+    width: 14%;
+}
+
+.relCalendarioEscala .tabelaApertadaCalendario .colFimSemana{
+    width: 14%;
+    background-color: #ffdddd;
+    float: left;
+    vertical-align: top;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.relCalendarioEscala .tabelaApertadaCalendario .colEscala{
+    background-color: #a3dce6;
+}
+
+.tabelaCalendarioAtividadeFimSemana{
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 30px;
+    position: absolute;
+}
+.relCalendarioEscala .tabelaApertadaCalendario .tabelaCalendarioDiaMes{
+    width: 100%;
+    vertical-align: top;
+    padding-top: 2px;
+    padding-left: 2px;
+    font-size: 11px;
+
+}
+.relCalendarioEscala .tabelaApertadaCalendario tbody .tabelaCalendarioDiaMesConteudo {
+    width: 100%;
+    vertical-align: top;
+    padding: 0px;
+    margin: 0 2px 0 2px;
+    font-size: 10px;
+
+}
+.relCalendarioEscala .tabelaApertadaCalendario tbody tr td .tabelaCalendarioAtividade{
+    font-size: 10px;
+    padding-left: 15px;
+    padding-top: 30px;
+    position: absolute;
+}
+
+/*//////////////////////////////////////////////
+/////////// tela responsiva  //////////////////
+////////////////////////////////////////////*/
+@media only screen and (max-width: 600px) {
+    td{
+        font-size: 13px;
+    }
+
+    th{
+        white-space: normal;
+    }
+
+    #om {
+        zoom: 70%;
+    }
+}
+

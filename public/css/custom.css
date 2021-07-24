@@ -1,0 +1,493 @@
+.text-warning2 {
+    color: #FFB000 !important;
+}
+
+.fontAdjust {
+    font-size: 1.2em;
+}
+
+.fontAdjust2 {
+    font-size: 2.0em;
+}
+
+.fontCut {
+    text-decoration: line-through;
+}
+.calendar-adjust {
+    margin: 5px 0px 10px 0px;
+    /*background-color: #FFFFFF;*/
+}
+
+.space-adjust {
+    margin-left: .01rem;
+    /*background-color: #FFFFFF;*/
+}
+.caixaAlerta {
+    float: left;
+    position: absolute;
+    bottom:     0px;
+    right:      0px;
+}
+
+.alert-flash {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+.caixaDeTexto {
+    max-height: 10rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90%;
+    background-position: center;
+    opacity: 0.03;
+    filter:alpha(opacity=03);
+    z-index: -999;
+}
+
+.lineSpaceHeight {
+    padding: 5px 0px !important;
+    margin: 0px !important;
+}
+
+.elementoButtonAjust{
+    margin: 0px;
+    padding: 10px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 20px;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+.elementoIconBig{
+    font-size: 36px;
+    /*width: 150px;*/
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 2px;
+}
+
+.elementoImageBig{
+    /*font-size: 36px;*/
+    width: 172px;
+    height: 93px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.elementoImageBig img {
+    width: 33px;
+    height: 37px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*botão enviar*/
+.botaotabela  {
+    padding-bottom: 5px;
+}
+
+/*botão enviar*/
+.botaoMini  {
+    display: inline-block;
+    color: #1659BF;
+    font-weight: 400;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Tooltip container */
+.sisTooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.sisTooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.sisTooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.sisTooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Tooltip text */
+.sisTooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 350px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -320px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.sisTooltip .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 91%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.sisTooltip:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Overwrite FullCalendar */
+.fc-title {
+    font-size: .7em;
+}
+
+.fc-day-grid-event .fc-time {
+    font-weight: bold;
+}
+
+.HTMLUser {
+    display: inline-block;
+}
+
+.HTMLUser .HTMLText {
+    top: 5px;
+    max-height: 35px;
+    position: relative;
+    z-index: 1000;
+    display: block;
+    float: left;
+    right: 5px;
+}
+
+.HTMLUser .HTMLText .HTMLSpan {
+    float: left;
+    margin: 0px;
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+.HTMLUser .HTMLImage {
+    top: 1px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 1000;
+    display: block;
+    float: right;
+}
+
+.HTMLUser .HTMLImage img {
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+/* thead das tabelas */
+.thead-primary{
+    background-color: #D7D7D7;
+
+}
+.subtitlesituacao{
+    background-color: #005cbf;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.optGroup{
+    display: inline-block;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border: 1px solid #CED4DA;
+    border-radius: 0.25rem;
+    margin-bottom: 4px;
+}
+
+.optGroup .opts{
+    vertical-align: middle;
+    padding: 5px 2px;
+}
+
+.alertControlBox {
+    padding-top: 6px;
+    padding-right: 5px;
+    display: block;
+}
+
+/* PERSONALIZAÇÃO DO BOTÃO DE UPLOAD DE ARQUIVOS */
+.custom-file-label::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 2.25rem;
+    padding: 0.375rem 0.75rem;
+    color: #ffffff;
+    content: "Selecione um arquivo";
+    background-color: #3490dc;
+    border-left: 1px solid #ced4da;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.btn-primary-inverse {
+    color: #007bff;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-mini-noBg {
+    color: #007bff;
+    line-height: 0.2;
+}
+
+.btn-mini-noBg:hover {
+    color: #55A5FA;
+}
+
+.btn-check {
+    /*color: #007bff;*/
+    /*line-height: 0.2;*/
+    padding: 0;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-bottom: 2px;
+}
+
+.btn-check:hover {
+    /*color: #55A5FA;*/
+}
+
+.td-list-mini {
+    padding: 0.3rem 0px !important;
+}
+
+.txtObrigatorio {
+    color: #FF0000;
+    font-size: 1.0rem;
+    margin-left: 2px;
+}
+
+.msgBadge {
+    color: #FFFFFF;
+    background-color: #1659BF;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.blocoAlertas {
+    display: inline-flex;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 1.0em;
+}
+
+/* Style the tab */
+.blocoAlertas .tab {
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 22%;
+    /*height: 300px;*/
+}
+
+/* Style the buttons inside the tab */
+.blocoAlertas .tab button {
+    display: inline-block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    /*font-size: 0.9em;*/
+}
+
+/* Change background color of buttons on hover */
+.blocoAlertas .tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.blocoAlertas .tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.blocoAlertas .tabcontent {
+    display: block;
+    float: left;
+    padding: 5px 12px 20px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+}
+
+.blocoAlertas .tabcontent p {
+    margin: 5px 0px;
+    text-align: justify;
+    text-justify: newspaper
+}
+
+.table-striped tr:last-child {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #1E6AAE;
+    border-color: #1E6AAE;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #1A60AB;
+    border-color: #1A60AB;
+}
+
+.textAreaAdjust {
+    width: 100%;
+    min-height: 100px;
+}
+
+.fileButton{
+    position: relative;
+    left:-1px;
+    background-color:#446655;
+}​
+
+@media only screen and (max-width: 600px) {
+    .row div {
+        font-size: 0.9em !important;
+    }
+
+    .HTMLUser {
+        max-width: 160px;
+    }
+
+    .HTMLUser .HTMLText {
+        max-width: 100px;
+        left: 1px;
+        top: 9px;
+    }
+
+    .HTMLUser .HTMLText .HTMLSpan {
+        max-width: 100px;
+        white-space: normal;
+        font-size: 0.6em;
+    }
+
+    .subtitlesituacao{
+        background-color: #005cbf;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: small;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .blocoAlertas {
+        font-size: 0.8em;
+    }
+
+    .blocoAlertas .tab {
+        width: 40%;
+    }
+
+    .btnAjuste {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .ocultarTexto {
+        display: none;
+    }
+
+}
