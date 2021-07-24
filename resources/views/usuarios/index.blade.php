@@ -18,7 +18,8 @@
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <form>
+                    <form name="frmUsuarios" id="frmUsuarios" action="#" method="post">
+                        @csrf
                         <label class="form-check-label" for="inlineRadio1">Escolha sua nacionalidade</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
@@ -48,24 +49,29 @@
                         <div class="form-row">
                             <div class="form-group col-md-2">
                                 <label for="inputEmail4">UF de nascimento</label>
-                                <input type="text" class="form-control" id="uf" name="uf" placeholder="Informe o UF de nascimento">
+                                <select id="uf" name="uf" class="form-control">
+                                    <option selected>Selecione o estado...</option>
+                                    @foreach($ufs as $uf)
+                                        <option value="{{ $uf->id }}">{{ $uf->descricao }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="form-group col-md-8">
                                 <label for="inputPassword4">Município de nascimento</label>
-                                <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Informe o município de nascimento">
+                                <select id="municipio" name="municipio" class="form-control">
+                                    <<option value="">Selecione um municipio</option>
+                                </select>
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="inputEstado">Nível de formação</label>
                                 <select id="formacao" name="formacao" class="form-control">
                                     <option selected>Escolher...</option>
-                                    <option>...</option>
+                                    @foreach($escolaridades as $escolaridade)
+                                        <option value="{{ $escolaridade->id }}">{{ $escolaridade->descricao }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
-
-
-
-
                         <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
                     </form>
                 </blockquote>
@@ -87,5 +93,26 @@
 @section('endPageScript')
     <script>
         //
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('select[name="uf"]').on('change', function(){
+                var estado_id = $(this).val();
+                $.ajax({
+                    url: '/LST/'+estado_id,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(data){
+                        $('select[name=municipio]').empty();
+                        $('select[name=municipio]').append('<option value="">Selecione um municipio</option>');
+                        $.each(data,function(key, value){
+                            //console.log(data[key].areGeoSigla);
+                            $('select[name=municipio]').append('<option value="'+value.id+'">'+value.municipio+'</option>');
+                        });
+                    }
+                })
+
+            });
+        });
     </script>
 @endsection

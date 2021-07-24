@@ -23,3 +23,4 @@ Route::get('/USR/{id}', 'App\Http\Controllers\UsuariosController@show');
 Route::post('/USR/{id}', 'App\Http\Controllers\UsuariosController@update');
 Route::delete('/USR/{id}', 'App\Http\Controllers\UsuariosController@destroy');
 Route::get('/LST', 'App\Http\Controllers\UsuariosController@lista');
+Route::get('/LST/{id}', 'App\Http\Controllers\UsuariosController@setaMunicipios');
