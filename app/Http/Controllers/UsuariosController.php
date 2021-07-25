@@ -15,13 +15,8 @@ class UsuariosController extends Controller
     {
         $escolaridades = Escolaridades::get();
         $ufs = Ufs::get();
-        $municipios = Municipios::select('municipios.municipio', 'municipios.id')
-            ->join('ufs','municipios.ufs_id','ufs.id')
-            ->where('municipios.ufs_id', 10)
-            ->get();
 
-        //dd($municipios);
-        return view('usuarios.index', compact('escolaridades', 'ufs', 'municipios'));
+        return view('usuarios.index', compact('escolaridades', 'ufs'));
     }
 
 
@@ -38,7 +33,7 @@ class UsuariosController extends Controller
         $usuarios->ufs_id =             $request->uf;
         $usuarios->escolaridades_id =   $request->formacao;
         $usuarios->municipios_id =      $request->municipio;
-        $usuarios->nome =               $request->nome;
+        $usuarios->nome =               mb_strtoupper($request->nome);
         $usuarios->cpf =                $request->cpf;
         $usuarios->data_nascimento =    $request->dtNascimento;
         $usuarios->brasileiro =         $request->nacionalidade;

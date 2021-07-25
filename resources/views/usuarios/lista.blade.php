@@ -48,7 +48,6 @@
             </div>
         </div>
     </div>
-
 @endsection
 
 @section('control')

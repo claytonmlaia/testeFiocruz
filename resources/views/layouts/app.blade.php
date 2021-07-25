@@ -64,6 +64,7 @@
 
 <!-- Core plugin JavaScript-->
 <script src="{{ asset('jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/jquery.mask.js') }}"></script>
 
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('js/endPageScript.js') }}"></script>
