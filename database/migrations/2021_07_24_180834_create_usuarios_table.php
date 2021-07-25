@@ -15,12 +15,12 @@ class CreateUsuariosTable extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('ufs_id');
+            $table->unsignedBigInteger('ufs_id')->unsigned()->nullable()->default(NULL);
             $table->unsignedBigInteger('escolaridades_id');
-            $table->unsignedBigInteger('municipios_id');
+            $table->unsignedBigInteger('municipios_id')->unsigned()->nullable()->default(NULL);
             $table->char('brasileiro');
             $table->string('nome');
-            $table->string('cpf');
+            $table->string('cpf')->nullable()->default(NULL);
             $table->date('data_nascimento');
             $table->timestamps();
             // ligacoes

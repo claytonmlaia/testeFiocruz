@@ -134,6 +134,7 @@
             document.getElementById("uf").disabled = false;
             document.getElementById("municipio").disabled = false;
 
+            document.getElementById("nome").required = true;
             document.getElementById("cpf").required = true;
             document.getElementById("uf").required = true;
             document.getElementById("municipio").required = true;
@@ -141,6 +142,7 @@
             document.getElementById("uf").disabled = true;
             document.getElementById("municipio").disabled = true;
 
+            document.getElementById("nome").required = true;
             document.getElementById("cpf").required = false;
             document.getElementById("uf").required = false;
             document.getElementById("municipio").required = false;
