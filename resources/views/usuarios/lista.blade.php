@@ -26,6 +26,8 @@
                             <th scope="col" class="bg-primary">Nome</th>
                             <th scope="col" class="bg-primary">Data de Nascimento</th>
                             <th scope="col" class="bg-primary">CPF</th>
+                            <th scope="col" class="bg-primary">Cidade</th>
+                            <th scope="col" class="bg-primary">Formação</th>
                             <th scope="col" class="bg-primary">Ações</th>
                         </tr>
                         </thead>
@@ -35,6 +37,8 @@
                             <td>{{ $listaUsuario->nome }}</td>
                             <td>{{ \Carbon\Carbon::parse($listaUsuario->data_nascimento)->format('d/m/Y') }}</td>
                             <td>{{ $listaUsuario->cpf }}</td>
+                            <td>@if($listaUsuario->ufs_id && $listaUsuario->municipios_id){{ $listaUsuario->municipio->municipio }} / {{ $listaUsuario->uf->sigla }} @else - @endif</td>
+                            <td>{{ $listaUsuario->escolaridade->descricao }}</td>
                             <td>
                                 <a class="btn btn-success" href="{{ url('/') }}" role="button" title="Detalhes do cadastro"><i class="fas fa-eye"></i></a>
                                 <a class="btn btn-primary" href="{{ url('/') }}" role="button" title="Editar cadastro"><i class="fas fa-edit"></i></a>
