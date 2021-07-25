@@ -18,6 +18,7 @@ class CreateUsuariosTable extends Migration
             $table->unsignedBigInteger('ufs_id');
             $table->unsignedBigInteger('escolaridades_id');
             $table->unsignedBigInteger('municipios_id');
+            $table->char('brasileiro');
             $table->string('nome');
             $table->string('cpf');
             $table->date('data_nascimento');
