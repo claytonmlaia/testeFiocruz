@@ -30,16 +30,18 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($listaUsuarios as $listaUsuario)
                         <tr>
-                            <td>Clayton Martins Laia</td>
-                            <td>30/10/1981</td>
-                            <td>013.852.946-98</td>
+                            <td>{{ $listaUsuario->nome }}</td>
+                            <td>{{ \Carbon\Carbon::parse($listaUsuario->data_nascimento)->format('d/m/Y') }}</td>
+                            <td>{{ $listaUsuario->cpf }}</td>
                             <td>
                                 <a class="btn btn-success" href="{{ url('/') }}" role="button" title="Detalhes do cadastro"><i class="fas fa-eye"></i></a>
                                 <a class="btn btn-primary" href="{{ url('/') }}" role="button" title="Editar cadastro"><i class="fas fa-edit"></i></a>
                                 <a class="btn btn-danger" href="{{ url('/') }}" role="button" title="Excluír cadastro"><i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </blockquote>

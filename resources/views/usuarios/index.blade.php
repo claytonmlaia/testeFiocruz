@@ -22,11 +22,11 @@
                         @csrf
                         <label class="form-check-label" for="inlineRadio1">Escolha sua nacionalidade</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                            <input class="form-check-input" type="radio" name="nacionalidade" id="brasileiro" value="S" checked>
                             <label class="form-check-label" for="inlineRadio1">Brasileiro (a)</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <input class="form-check-input" type="radio" name="nacionalidade" id="estranjeiro" value="N">
                             <label class="form-check-label" for="inlineRadio2">Estranjeiro (a)</label>
                         </div>
                         <hr>
@@ -50,7 +50,7 @@
                             <div class="form-group col-md-2">
                                 <label for="inputEmail4">UF de nascimento</label>
                                 <select id="uf" name="uf" class="form-control">
-                                    <option selected>Selecione o estado...</option>
+                                    <option value="" selected>Selecione o estado...</option>
                                     @foreach($ufs as $uf)
                                         <option value="{{ $uf->id }}">{{ $uf->descricao }}</option>
                                     @endforeach
@@ -65,7 +65,7 @@
                             <div class="form-group col-md-2">
                                 <label for="inputEstado">Nível de formação</label>
                                 <select id="formacao" name="formacao" class="form-control">
-                                    <option selected>Escolher...</option>
+                                    <option value="" selected>Escolher...</option>
                                     @foreach($escolaridades as $escolaridade)
                                         <option value="{{ $escolaridade->id }}">{{ $escolaridade->descricao }}</option>
                                     @endforeach
