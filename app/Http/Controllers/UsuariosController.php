@@ -44,7 +44,7 @@ class UsuariosController extends Controller
         $usuarios->brasileiro =         $request->nacionalidade;
         $usuarios->save();
 
-        // flash(__('msgUsuarios.planilha.salvar'))->success();
+        flash(__('msgUsuarios.usuario.cadastro.sucesso'))->success();
         return redirect(url('/LST'));
     }
 
